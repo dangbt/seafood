@@ -7,13 +7,16 @@
       "./models"
     ],
     "mixins": [
-      "loopback/common/mixins",
       "loopback/server/mixins",
-      "../common/mixins",
-      "./mixins"
+      "./mixins",
+      "../node_modules/loopback-ds-timestamp-mixin"
     ]
   },
-  "products": {
+  "Products": {
+    "dataSource": "seafood_db",
+    "public": true
+  },
+  "ProductCategories": {
     "dataSource": "seafood_db",
     "public": true
   }

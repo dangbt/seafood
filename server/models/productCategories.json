@@ -1,6 +1,6 @@
 {
-  "name": "Products",
-  "plural": "products",
+  "name": "ProductCategories",
+  "plural": "categories",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -10,16 +10,13 @@
     "TimeStamp": true
   },
   "properties": {
-    "name": {"type": "string", "required": true},
-    "price": {"type": "number", "required": true},
-    "discountPrice": {"type": "number"},
-    "discountPriceType": {"type": "number"}
+    "name": {"type": "string"}
   },
   "validations": [],
   "relations": {
-    "productCategories": {
-      "type": "belongsTo",
-      "model": "ProductCategories",
+    "products": {
+      "type": "hasMany",
+      "model": "Products",
       "foreignKey": "categoryId"
     }
   },

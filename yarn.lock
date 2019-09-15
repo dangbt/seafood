@@ -2084,7 +2084,7 @@ date-now@^0.1.4:
   resolved "https://registry.yarnpkg.com/date-now/-/date-now-0.1.4.tgz#eaf439fd4d4848ad74e5cc7dbef200672b9e345b"
   integrity sha1-6vQ5/U1ISK105cx9vvIAZyueNFs=
 
-debug@2.6.9, debug@^2.1.1, debug@^2.1.2, debug@^2.2.0, debug@^2.3.3:
+debug@2.6.9, debug@^2.1.1, debug@^2.1.2, debug@^2.2.0, debug@^2.3.3, debug@^2.6.1:
   version "2.6.9"
   resolved "https://registry.yarnpkg.com/debug/-/debug-2.6.9.tgz#5d128515df134ff327e90a4c93f4e077a536341f"
   integrity sha512-bC7ElrdJaJnPbAP+1EotYvqZsb3ecl5wi6Bfi6BJTUcNowp6cvspg0jXznRTKDjm/E7AdgFBVeAPVMNcKGsHMA==
@@ -3915,6 +3915,13 @@ loopback-datatype-geopoint@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/loopback-datatype-geopoint/-/loopback-datatype-geopoint-1.0.0.tgz#fdaa5c7ab8d730a9ab7e54554be165f31cdf6100"
   integrity sha1-/apcerjXMKmrflRVS+Fl8xzfYQA=
+
+loopback-ds-timestamp-mixin@^3.4.1:
+  version "3.4.1"
+  resolved "https://registry.yarnpkg.com/loopback-ds-timestamp-mixin/-/loopback-ds-timestamp-mixin-3.4.1.tgz#ab0f0df009b346f079ef71a41c483100d2ea6b27"
+  integrity sha1-qw8N8AmzRvB573GkHEgxANLqayc=
+  dependencies:
+    debug "^2.6.1"
 
 loopback-filters@^1.0.0:
   version "1.0.0"

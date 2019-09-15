@@ -1,0 +1,14 @@
+{
+  "seafood_db": {
+    "host": "localhost",
+    "port": 27017,
+    "url": "",
+    "database": "seafood_db",
+    "password": "",
+    "name": "seafood_db",
+    "user": "",
+    "connector": "mongodb",
+    "useUnifiedTopology": true,
+    "useNewUrlParser": true
+  }
+}

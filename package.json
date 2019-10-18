@@ -7,10 +7,13 @@
   },
   "scripts": {
     "lint": "eslint .",
+    "build": "next build",
     "start": "nodemon server/server.js",
     "posttest": "npm run lint"
   },
   "dependencies": {
+    "@zeit/next-css": "^1.0.1",
+    "@zeit/next-sass": "^1.0.1",
     "compression": "^1.0.3",
     "cors": "^2.5.2",
     "dotenv": "^8.1.0",
@@ -22,6 +25,7 @@
     "loopback-ds-timestamp-mixin": "^3.4.1",
     "next": "^9.0.5",
     "next-routes": "^1.4.2",
+    "node-sass": "^4.12.0",
     "path": "^0.12.7",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",

@@ -2,7 +2,6 @@
   "seafood_db": {
     "host": "${DB_HOST}",
     "port": "${DB_PORT}",
-    "url":  "${DB_CONNECT_STRING}",
     "database": "${DB_NAME}",
     "password": "${DB_PASSWORD}",
     "name": "seafood_db",

@@ -8,8 +8,8 @@ const app = module.exports = loopback()
 app.start = function () {
   // start the web server
 
-  app.use(loopback.static(path.resolve(__dirname, '../client')))
-  app.use(loopback.static(path.resolve(__dirname, '../client/assets')))
+  app.use(loopback.static(path.resolve(__dirname, './client')))
+  app.use(loopback.static(path.resolve(__dirname, './client/assets')))
   return app.listen(function () {
     app.emit('started')
     const baseUrl = app.get('url').replace(/\/$/, '')

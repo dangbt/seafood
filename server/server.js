@@ -7,7 +7,7 @@ const app = module.exports = loopback()
 
 app.start = function () {
   // start the web server
-
+  app.set('view engine', 'ejs')
   app.use(loopback.static(path.resolve(__dirname, './client')))
   app.use(loopback.static(path.resolve(__dirname, './client/assets')))
   return app.listen(function () {

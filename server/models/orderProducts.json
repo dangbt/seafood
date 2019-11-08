@@ -1,6 +1,6 @@
 {
-  "name": "ProductCategories",
-  "plural": "categories",
+  "name": "OrderProducts",
+  "plural": "orderProducts",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -10,15 +10,19 @@
     "TimeStamp": true
   },
   "properties": {
-    "name": {"type": "string", "require": true },
-    "imageUrl": { "type": "string" }
+    "buyPrice": {"type": "number", "require": true }
   },
   "validations": [],
   "relations": {
     "products": {
-      "type": "hasMany",
+      "type": "belongsTo",
       "model": "Products",
-      "foreignKey": "categoryId"
+      "foreignKey": "productId"
+    },
+    "orders": {
+      "type": "belongsTo",
+      "model": "Orders",
+      "foreignKey": "orderId"
     }
   },
   "acls": [

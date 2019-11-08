@@ -12,8 +12,8 @@
   "properties": {
     "name": {"type": "string", "required": true},
     "price": {"type": "number", "required": true},
-    "discountPrice": {"type": "number"},
-    "discountPriceType": {"type": "number"}
+    "imageUrl": { "type": "string"},
+    "type": { "type": "enum", "values": [1, 2] }
   },
   "validations": [],
   "relations": {
@@ -21,6 +21,11 @@
       "type": "belongsTo",
       "model": "ProductCategories",
       "foreignKey": "categoryId"
+    },
+    "orderProducts": {
+      "type": "hasMany",
+      "model": "OrderProducts",
+      "foreignKey": "productId"
     }
   },
   "acls": [

@@ -1,6 +1,6 @@
 {
-  "name": "ProductCategories",
-  "plural": "categories",
+  "name": "Orders",
+  "plural": "orders",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -10,15 +10,19 @@
     "TimeStamp": true
   },
   "properties": {
-    "name": {"type": "string", "require": true },
-    "imageUrl": { "type": "string" }
+    "total": {"type": "number", "require": true },
+    "user": { 
+      "shippingAddress": { "type": "string" },
+      "name": { "type": "string" },
+      "phoneNumber": { "type": "string" }
+     }
   },
   "validations": [],
   "relations": {
-    "products": {
+    "orderProducts": {
       "type": "hasMany",
-      "model": "Products",
-      "foreignKey": "categoryId"
+      "model": "OrderProducts",
+      "foreignKey": "orderId"
     }
   },
   "acls": [

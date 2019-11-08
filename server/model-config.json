@@ -19,5 +19,13 @@
   "ProductCategories": {
     "dataSource": "seafood_db",
     "public": true
+  },
+  "Orders": {
+    "dataSource": "seafood_db",
+    "public": true
+  },
+  "OrderProducts": {
+    "dataSource": "seafood_db",
+    "public": true
   }
 }

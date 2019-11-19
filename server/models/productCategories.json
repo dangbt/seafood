@@ -19,6 +19,11 @@
       "type": "hasMany",
       "model": "Products",
       "foreignKey": "categoryId"
+    },
+    "category": {
+      "type": "hasMany",
+      "model": "ProductCategories",
+      "foreignKey": "categoryId"
     }
   },
   "acls": [
